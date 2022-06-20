@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Baki App | Dashboard </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <!-- HEADER END -->
+
+    <aside class="desktop_nav sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-x fixed-start px-2"
+        id="sidenav-main">
+
+        <div class="sidenav-header mb-5">
+            <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href="/dashboard.html">
+                <img src="./images/Logo.png" class="navbar-brand-img h-100" alt="main_logo" />
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse  w-auto" id="sidenav-collapse-main">
+
+            <ul class="navbar-nav ">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/dashboard.html">
+                        <div class="text-center me-4 d-flex align-items-center justify-content-center">
+
+                            <img src="./images/icons/Home.svg" alt="" />
+
+                        </div>
+
+                        <span class="nav-link-text ms-1">Home</span>
+
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/deposit.html">
+                        <div class="text-center me-4 d-flex align-items-center justify-content-center">
+
+                            <img src="./images/icons/Bag.svg" alt="" />
+
+                        </div>
+
+                        <span class="nav-link-text ms-1">Deposit</span>
+
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/mint.html">
+                        <div class="text-center me-4 d-flex align-items-center justify-content-center">
+
+                            <img src="./images/icons/Swap.svg" alt="" />
+
+                        </div>
+
+                        <span class="nav-link-text ms-1">Mint</span>
+
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/swap.html">
+                        <div class="text-center me-4 d-flex align-items-center justify-content-center">
+
+                            <img src="./images/icons/User.svg" alt="" />
+
+                        </div>
+
+                        <span class="nav-link-text ms-1">Swap</span>
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <button class="btn btn-primary px-4 py-3 w-100"> <img src="./images/icons/InfoSquare.svg" alt="" />
+            Guide</button>
+
+    </aside>
+
+    <div class="m-auto text-center">
+
+        <aside
+            class="mobile_sideNav sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-x fixed-start px-2"
+            id="mobile_sideNav">
+
+            <div class="sidenav-header mb-5 mt-5">
+                <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                    aria-hidden="true" id="iconSidenav"></i>
+                <a class="navbar-brand m-0" href="/index.html">
+                    <img src="./images/Logo.png" class="navbar-brand-img h-100" alt="main_logo" />
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse  w-auto" id="sidenav-collapse-main">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">
+                            <div class="text-center me-4 d-flex align-items-center justify-content-center">
+
+                                <img src="./images/icons/Home.svg" alt="" />
+
+                            </div>
+
+                            <span class="nav-link-text ms-1">Home</span>
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/deposit.html">
+                            <div class="text-center me-4 d-flex align-items-center justify-content-center">
+
+                                <img src="./images/icons/Bag.svg" alt="" />
+
+                            </div>
+
+                            <span class="nav-link-text ms-1">Deposit</span>
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mint.html">
+                            <div class="text-center me-4 d-flex align-items-center justify-content-center">
+
+                                <img src="./images/icons/Swap.svg" alt="" />
+
+                            </div>
+
+                            <span class="nav-link-text ms-1">Mint</span>
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/swap.html">
+                            <div class="text-center me-4 d-flex align-items-center justify-content-center">
+
+                                <img src="./images/icons/User.svg" alt="" />
+
+                            </div>
+
+                            <span class="nav-link-text ms-1">Swap</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <button class="btn btn-primary px-4 py-3 w-100"> <img src="./images/icons/InfoSquare.svg" alt="" />
+                Guide</button>
+
+        </aside>
+
+    </div>
+
+    <!-- HEADER END -->
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg">
+
+        <div class="container-fluid py-1 px-3 mt-5">
+
+            <!-- BREADCHUMB  -->
+
+            <nav id="breadcrumb" aria-label="breadcrumb">
+
+                <div class="d-flex align-items-center justify-content-between">
+
+                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                        <li class="breadcrumb-item text-sm"> Dashboard </li>
+                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Home</li>
+                    </ol>
+
+                    <div class="bar">
+
+                        <i id="userBar" class="ri-user-line me-4"></i>
+
+                        <i id="barId" class="ri-bar-chart-horizontal-line"></i>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <!-- BREADCHUMB END-->
+
+            <div class="row">
+
+                <div class="col-xl-9 mt-5">
+
+                    <div class="d-flex align-items-center justify-content-between mb-5">
+
+                        <h4 class="border_left mb-0 fw-bold">ASSETS</h4>
+
+                        <p class="mb-0">More Assets <span> <i class="ri-arrow-right-line"></i> </span> </p>
+
+                    </div>
+
+                    <!-- TOP CARD -->
+
+                    <div class="row top_card">
+
+                        <div class="col-xl-4 col-sm-6 col-md-6 col-sm-6 mb-xl-0 mb-4">
+
+                            <h5 class='fw-bold border_bottom'>USDC</h5>
+
+                            <div class="card bg-gradient">
+                                <div class="card-body">
+                                    <div class="row">
+
+                                        <div class="col-8">
+                                            <div class="numbers">
+                                                <p class="text-sm mb-0 text-capitalize font-weight-bold">$</p>
+                                                <p class="font-weight-bolder mb-0">
+                                                    350,000.00
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="chart">
+                                            <img src='./images/Chart.png' alt="" />
+                                        </div>
+
+                                        <div class="mt-4">
+
+                                            <div class="d-flex align-items-center justify-content-between zIndex">
+
+                                                <div class="">
+                                                    <p class="title">Rate</p>
+                                                    <p class="child">$ 1.004</p>
+                                                </div>
+
+                                                <div class="">
+                                                    <p class="title">24h %</p>
+                                                    <p class="child">+ 0.004%</p>
+                                                </div>
+
+                                                <div class="">
+                                                    <p class="title">7d %</p>
+                                                    <p class="child">+ 0.017%</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-4 col-sm-6 col-md-6 col-sm-6 mb-xl-0 mb-4">
+
+                            <h5 class='fw-bold border_bottom'>zNGN</h5>
+
+                            <div class="card bg-gradient-outline">
+                                <div class="card-body">
+                                    <div class="row">
+
+                                        <div class="col-8">
+                                            <div class="numbers">
+                                                <p class="text-sm mb-0 text-capitalize font-weight-bold">₦</p>
+                                                <p class="font-weight-bolder mb-0">
+                                                    100,000,000.00
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="chart">
+                                            <img src="./images/Chart2.png" alt="" />
+                                        </div>
+
+                                        <div class="mt-4">
+
+                                            <div class="d-flex align-items-center justify-content-between zIndex">
+
+                                                <div class="">
+                                                    <p class="title text-dark">Rate</p>
+                                                    <p class="child text-dark">₦ 416.00</p>
+                                                </div>
+
+                                                <div class="">
+                                                    <p class="title text-dark">24h %</p>
+                                                    <p class="child">- 1.17%</p>
+                                                </div>
+
+                                                <div class="">
+                                                    <p class="title text-dark">7d %</p>
+                                                    <p class="child">- 10.17%</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-4 col-sm-6 col-md-6 col-sm-6 mb-xl-0 mb-4">
+
+                            <h5 class='fw-bold border_bottom'>zZAR</h5>
+
+                            <div class="card bg-gradient-outline">
+                                <div class="card-body">
+                                    <div class="row">
+
+                                        <div class="col-8">
+                                            <div class="numbers">
+                                                <p class="text-sm mb-0 text-capitalize font-weight-bold">R</p>
+                                                <p class="font-weight-bolder mb-0">
+                                                    500,000.00
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="chart">
+                                            <img src="./images/Chart2.png" alt="" />
+                                        </div>
+
+                                        <div class="mt-4">
+
+                                            <div class="d-flex align-items-center justify-content-between zIndex">
+
+                                                <div class="">
+                                                    <p class="title text-dark">Rate</p>
+                                                    <p class="child text-dark">R 16.00</p>
+                                                </div>
+
+                                                <div class="">
+                                                    <p class="title text-dark">24h %</p>
+                                                    <p class="child">- 0.002%</p>
+                                                </div>
+
+                                                <div class="">
+                                                    <p class="title text-dark">7d %</p>
+                                                    <p class="child">- 0.01%</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- TOP CARD END -->
+
+                    <div class="mt-5 pt-3">
+
+                        <div class="d-flex align-items-center justify-content-between mb-5">
+
+                            <h4 class="mb-0 fw-bold">ACTIVITY</h4>
+
+                            <p class="mb-0">More Activity <span> <i class="ri-arrow-right-line"></i> </span>
+                            </p>
+
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Transactions</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Date</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td> <img class="me-2" src="./images/table/image1.png" alt=""> USDC Deposited
+                                        </td>
+                                        <td>0.0154 ETH</td>
+                                        <td>USD $10</td>
+                                        <td>Pending</td>
+                                        <td>February 21, 2021</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> <img class="me-2" src="./images/icons/zUSD.png" alt=""> zUSD Minted </td>
+                                        <td>0.3 BTC</td>
+                                        <td>USD $140</td>
+                                        <td>Done</td>
+                                        <td>February 14, 2021</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> <img class="me-2" src="./images/icons/zZAR.png" alt=""> zZAR Sent </td>
+                                        <td>0.025 BTC</td>
+                                        <td>USD $56</td>
+                                        <td>Done</td>
+                                        <td>February 14, 2021</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> <img class="me-2" src="./images/icons/zNGN.png" alt=""> zNGN Swap </td>
+                                        <td>0.025 BTC</td>
+                                        <td>USD $56</td>
+                                        <td>Done</td>
+                                        <td>February 14, 2021</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- TRADER PROFILE DEsKTOP -->
+
+    <div class="col-lg-3 dashboard_main">
+
+        <div class="trader trader_desktop">
+
+            <div class="card px-4 py-5">
+
+                <div class="text-center m-auto">
+
+                    <h5 class="fw-bold"> Trader Profile </h5>
+
+                    <div class="image mt-5">
+                        <img src="images/User.png" alt="" />
+                    </div>
+
+                    <p class="mt-2">Han Ji Pyeong</p>
+
+                    <a class='edit_profile' href="/"> Edit Profile </a>
+
+                </div>
+
+                <div class="details mt-4">
+
+                    <h5 class="fw-bold">Account</h5>
+
+                    <div class="d-flex align-items-center justify-content-between my-3">
+                        <h6>Joined</h6>
+                        <p>June 22, 2020</p>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between my-3">
+                        <h6>Assets Total</h6>
+                        <p>$1,312,000.00</p>
+                    </div>
+
+                </div>
+
+                <div class="details mt-4">
+
+                    <h5 class="fw-bold">Assets</h5>
+
+                    <div class="d-flex align-items-center justify-content-between my-3">
+                        <p>USDC</p>
+                        <p>350,000,000 USDC</p>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between my-3">
+                        <p>cUSD</p>
+                        <p>1,000 cUSD</p>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between my-3">
+                        <p>DAI</p>
+                        <p>1,500 DAI</p>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between my-3">
+                        <p>zNGN</p>
+                        <p>100,000,000 zNGN</p>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between my-3">
+                        <p>zZAR</p>
+                        <p>500,000 zZAR</p>
+                    </div>
+
+                    <div class="more my-5 py-4">
+                        <h6 class="fw-bold">More assets...</h6>
+                    </div>
+
+                    <button class="btn btn-primary px-4 py-3 w-100"> <img src="./images/icons/SwapWhite.png" alt="" />
+                        Trade Now</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- TRADER PROFILE MOBILE -->
+
+    <div id="trader_mobile" class="trader trader_mobile right">
+
+        <div class="card px-4 py-5">
+
+            <div id="removeBar" class="cancel"><i class="ri-close-circle-fill"></i></div>
+
+            <div class="text-center m-auto">
+
+                <h5 class="fw-bold"> Trader Profile </h5>
+
+                <div class="image mt-5">
+                    <img src="images/User.png" alt="" />
+                </div>
+
+                <p class="mt-2">Han Ji Pyeong</p>
+
+                <a class='edit_profile' href="/"> Edit Profile </a>
+
+            </div>
+
+            <div class="details mt-4">
+
+                <h5 class="fw-bold">Account</h5>
+
+                <div class="d-flex align-items-center justify-content-between my-3">
+                    <h6>Joined</h6>
+                    <p>June 22, 2020</p>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between my-3">
+                    <h6>Assets Total</h6>
+                    <p>$1,312,000.00</p>
+                </div>
+
+            </div>
+
+            <div class="details mt-4">
+
+                <h5 class="fw-bold">Assets</h5>
+
+                <div class="d-flex align-items-center justify-content-between my-3">
+                    <p>USDC</p>
+                    <p>350,000,000 USDC</p>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between my-3">
+                    <p>cUSD</p>
+                    <p>1,000 cUSD</p>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between my-3">
+                    <p>DAI</p>
+                    <p>1,500 DAI</p>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between my-3">
+                    <p>zNGN</p>
+                    <p>100,000,000 zNGN</p>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between my-3">
+                    <p>zZAR</p>
+                    <p>500,000 zZAR</p>
+                </div>
+
+                <div class="more my-5 py-4">
+                    <h6 class="fw-bold">More assets...</h6>
+                </div>
+
+                <button class="btn btn-primary px-4 py-3 w-100"> <img src="./images/icons/SwapWhite.png" alt="" />
+                    Trade Now</button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

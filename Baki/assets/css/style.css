@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif !important;
     overflow-x: hidden !important;
+    zoom: 90% !important;
 }
 
 /* NAV */
@@ -8,7 +9,7 @@ body {
 .navbar {
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.16);
     background: #F8F7FF !important;
-    height: 100vh !important;
+    height: 130vh !important;
     z-index: 10000 !important;
 }
 
@@ -31,6 +32,8 @@ body {
     background: linear-gradient(278.99deg, #FF9675 4.15%, #AEA0FF 269.48%) !important;
     border-radius: 8px !important;
     position: relative;
+    border: none !important;
+    border: none !important;
 }
 
 .navbar .btn-primary {
@@ -38,6 +41,7 @@ body {
     border-radius: 8px !important;
     position: relative;
     top: 120px !important;
+    border: none !important;
 }
 
 .navbar .nav-link {
@@ -1307,7 +1311,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .trader_desktop {
+    .dashboard_main .trader_desktop {
         display: none !important;
     }
 }
@@ -1316,6 +1320,14 @@ body {
     .trader_mobile {
         display: none !important;
     }
+}
+
+@media (max-width: 768px) {
+
+    .mint_dashboard .trader_desktop{
+        display: none !important;
+    }
+    
 }
 
 .trader_mobile {
@@ -1369,6 +1381,7 @@ body {
 .trader .card .btn-primary {
     background: linear-gradient(278.99deg, #FF9675 4.15%, #AEA0FF 269.48%) !important;
     border-radius: 8px !important;
+    border: none !important;
 }
 
 /* END Profile Card */
@@ -1442,6 +1455,11 @@ body {
         width: 90% !important;
         margin: auto !important;
     }
+    @media (max-width: 600px) {
+        .landingpage{
+            padding-top: 200px !important;
+        }
+    }
 }
 
 .landingpage .btn img{
@@ -1461,4 +1479,90 @@ body {
 .landingpage .footer{
     position: relative;
     top: 100px !important;
+}
+
+/*  CONNECT PAGE */
+.connect_page{
+    height: 100vh !important;
+}
+
+@media (max-width: 600px) {
+    .connect_page{
+        padding-top: 150px !important;
+    }
+}
+
+.connect_page .logo img{
+    width: 120px;
+    margin-bottom: 13px;
+}
+
+.connect_page form label{
+    text-align: right !important;
+}
+
+
+.connect_page .password{
+    color: #0272c2;
+}
+
+.connect_page form input{
+    width: 100%!important;
+    border-bottom: 2px solid #0272c2 !important;
+    border: none;
+    outline: none !important;
+}
+
+.connect_page form .btn-primary{
+    background: #0272c2 !important;
+    border: none !important;
+    border-radius: 50px !important;
+    width: 100%;
+    padding: 15px 20px !important;
+    border: none !important;
+}
+
+
+/* WALLET CONNECT */
+
+.wallet_connect{
+    background: #272a2e;
+    height: 100vh !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px !important;
+}
+
+.wallet_connect .card{
+    border-radius: 20px !important;
+}
+
+.wallet_connect .wallets p{
+    font-size: 14px !important;
+    line-height: 15px;
+    padding-top: 8px;
+    font-weight: 500 !important;
+}
+
+.wallet_connect .tab{
+    background: #abacae;
+    padding: 5px !important;
+    border-radius: 10px !important;
+}
+
+.wallet_connect .tab .nav{
+    color: #FFF;
+}
+
+.wallet_connect .tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: #FFF;
+    color: #000;
+}
+
+.message{
+    font-size: 14px;
+    padding-top: 10px;
+    color: red;
 }
